@@ -1,5 +1,5 @@
 from copy import deepcopy
-from IPython.display import HTML, display
+#from IPython.display import HTML, display
 
 # ===================================
 # 2節終了時点
@@ -661,6 +661,13 @@ with open("index.html", "w", encoding="utf-8") as f:
 # ===================================
 # Colab上で表示
 # ===================================
-display(HTML(html))
+#display(HTML(html))
 
 #print("index.html を生成しました。")
+
+# index.html保存
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(html)
+
+print("index.html generated")
+

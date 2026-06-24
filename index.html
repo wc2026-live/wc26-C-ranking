@@ -1,12 +1,116 @@
 
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>World Cup Live Ranking</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+max-width:480px;
+margin:auto;
+padding:8px;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+h1{
+text-align:center;
+font-size:32px;
+}
+
+h2{
+font-size:24px;
+}
+
+.scorebox{
+font-size:22px;
+text-align:center;
+margin-bottom:20px;
+}
+
+.match{
+margin-bottom:16px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+font-size:18px;
+}
+
+th,td{
+border:1px solid #cccccc;
+padding:6px 2px;
+text-align:center;
+}
+
+.team{
+white-space:nowrap;
+text-align:left;
+}
+
+.note{
+font-size:14px;
+line-height:1.8;
+text-align:left;
+}
+
+@media (max-width:480px){
+
+h1{
+font-size:28px;
+}
+
+h2{
+font-size:20px;
+}
+
+.scorebox{
+font-size:18px;
+}
+
+table{
+font-size:16px;
+}
+
+th,td{
+padding:4px 1px;
+}
+
+.note{
+font-size:12px;
+}
+
+}
+
+</style>
+
+
+
 </head>
+
 <body>
-    <h1>World Cup Live Ranking</h1>
-    <p>Updated: 2026-06-24 17:33:54.560530</p>
+
+<h1>C組 LIVE順位</h1>
+
+<div class="scorebox">
+<div class='match'>試合前<br>🇲🇦 0 - 0 🇭🇹<br>(TCS: 🇲🇦 0)<br>---<div class='match'>試合前<br>🏴󠁧󠁢󠁳󠁣󠁴󠁿 0 - 0 🇧🇷<br>(TCS: 🇧🇷 0)</div><h2>順位表（試合前）</h2><table><tr><th>順位</th><th>チーム</th><th>勝点</th><th>得失差</th><th>得点</th><th>TCS</th></tr><tr><td>1</td><td class='team'>🇧🇷 ブラジル</td><td>4</td><td>3</td><td>4</td><td>-3</td></tr><tr><td>2</td><td class='team'>🇲🇦 モロッコ</td><td>4</td><td>1</td><td>2</td><td>-1</td></tr><tr><td>3</td><td class='team'>🏴󠁧󠁢󠁳󠁣󠁴󠁿 スコットランド</td><td>3</td><td>0</td><td>1</td><td>-4</td></tr><tr><td>4</td><td class='team'>🇭🇹 ハイチ</td><td>0</td><td>-4</td><td>0</td><td>-4</td></tr>
+</table>
+
+<br>
+
+<div class="note">
+<b>順位決定方法</b><br>
+①勝点<br>
+②直接対決<br>
+③得失点差<br>
+④得点<br>
+⑤TCS（フェアプレーポイント）※<br>
+※警告1枚: -1、警告2枚の退場: -3、一発退場: -4<br>
+<br>
+【正式結果は公式サイトを確認下さい】
+</div>
+
 </body>
 </html>

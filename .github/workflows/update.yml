@@ -1,25 +1,26 @@
 name: Auto Update World Cup Ranking
 
 on:
+  push:
+  workflow_dispatch:
   schedule:
     - cron: "*/1 * * * *"
-  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.10"
 
-      - name: Run script
-        run: python script.py
+      - run: python script.py
 
       - name: Commit and push
         run: |

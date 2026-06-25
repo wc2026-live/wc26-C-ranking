@@ -3,8 +3,7 @@ name: Auto Update World Cup Ranking
 on:
   push:
   workflow_dispatch:
-  schedule:
-    - cron: "*/1 * * * *"
+  schedule: []
 
 permissions:
   contents: write
